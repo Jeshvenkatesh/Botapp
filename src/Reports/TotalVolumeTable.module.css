@@ -1,0 +1,16 @@
+.headerClass{
+    background-color: #004289;
+    color:white;
+    height:60px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.reactTableWrapper{
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.react_tbl_text_center{
+    text-align: center;
+}

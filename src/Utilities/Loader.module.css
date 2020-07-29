@@ -1,0 +1,130 @@
+.logoWrapper{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.logoWrapper img{
+  width:150px;
+  height:150px;
+  animation: enlarge .10s ease-in-out 2;
+
+}
+
+.feedTwo img{
+  width:50px;
+  height:50px;
+  animation: enlargeone 1s ease-in-out 2;
+  animation-delay: .50s;
+}
+@keyframes enlargeone {
+  0% {
+     transform: scale(1,1);
+    
+  }
+  100% { 
+    transform: scale(2,2);
+  }
+}
+
+@keyframes enlarge {
+  0% {
+     transform: scale(1,1);
+    
+  }
+  100% { 
+    transform: scale(1.2,1.2);
+  }
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #004289;
+    border-bottom: 8px solid #004289;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% {
+       transform: rotate(0deg);
+      
+    }
+    100% { 
+      transform: rotate(360deg);
+    }
+  }
+  /* .loaderOne{
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #004289;
+    border-bottom: 8px solid #004289;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: spinone .3s ease-in-out infinite;
+    animation: spinone .3s ease-in-out infinite;
+    animation-delay: .2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @-webkit-keyframes spinone {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spinone {
+    0% {
+       transform: scale(1,1);
+      
+    }
+    100% { 
+      transform: scale(1.5,1.5);
+    }
+  } */
+  /* .loaderTwo{
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #004289;
+    border-bottom: 8px solid #004289;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: spintwo .3s ease-in-out infinite;
+    animation: spinone .3s ease-in-out infinite;
+    animation-delay: .2s;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @-webkit-keyframes spintwo {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spintwo {
+    0% {
+       transform: scale(1.5,1.5);
+      
+    }
+    100% { 
+      transform: scale(2,2);
+    }
+  } */

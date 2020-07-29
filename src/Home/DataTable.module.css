@@ -1,0 +1,655 @@
+.tableWrapper{
+    width:100%;
+    height:fit-content;
+    border-radius: 8px;
+    /* max-height: 400px; */
+    overflow: auto;
+    background-color: #004289;
+    margin-bottom: 100px;
+}
+.updateStatus{
+    color:green;
+    text-align: center;
+    /* margin-left:auto;
+    margin-right:auto; */
+}
+.searchBarWrapper{
+    width:50%;
+    padding:0px 8px;
+    font-size: 16px;
+    margin-bottom:4px;
+    /* display: block;
+    margin-left:auto;
+    margin-right:auto; */
+    /* margin-top:30px; */
+}
+.searchSection{
+    display:flex;
+    /* justify-content: space-around;
+    align-items: center; */
+}
+.searchSection input{
+    margin-left: auto;
+    margin-right: auto;
+}
+.searchSection button{
+    padding:10px 0px;
+    font-size:16px;
+    width:40%;
+    max-width:150px;
+    min-width:100px;
+    cursor:pointer;
+    color:white;
+    background-color:#004289 ;
+    border : 2px solid white;
+    outline:none;
+    border-radius:4px;
+    /* margin-left:80px;
+    margin-right:80px; */
+    transition: .5s;
+    }
+.searchSection button:hover{
+    border-color:#004289;
+    color:#004289;
+    background-color:whitesmoke;
+}
+.react_tbl_text_left{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.react_tbl_text_center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .react_tbl_text_center:nth-of-type(2n){
+    color: limegreen;
+} */
+.Sub_Popup_Wrapper{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color: transparent;
+}
+.crossIcon{
+    width:50px;
+    height:50px;
+    background-color:#004289 ;
+    color:white;
+    font-size:32px;
+    text-align: center;
+    position: absolute;
+    top:0;
+    right:0;
+    z-index: +2;
+    cursor: pointer;
+}
+.headerClassLeft{
+    background-color: #004289;
+    color:white;
+    height:60px;
+   display: flex;
+   align-items: center;
+   justify-content: left;
+}
+.headerClass{
+    background-color: #004289;
+    color:white;
+    height:60px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.tableMainSection{
+    width:98%;
+    height: fit-content;
+    margin:auto;
+    margin-top:50px;
+    text-align: center;
+}
+/* .tableMainSection h2{
+    background-color: orange;
+    margin:0px;
+    padding:8px 0px;
+    color:white;
+} */
+.tableMainSection h2{
+    background-color:transparent;
+    margin:0px;
+    padding:8px 0px;
+    color:black;
+}
+.actionIcons{
+    font-size:8px;
+    margin-left: auto;
+    margin-right:auto;
+}
+/* .actionIcons i{
+    margin-right:6px;
+    text-align: center;
+} */
+.actionIcons button{
+    color:white;
+    border:2px solid #004289;
+    padding:6px 4px;
+    /* background-color: #004289; */
+    background-color:#004289;
+    cursor:pointer;
+    transition: .7s;
+    outline: none;
+    border-radius:4px;
+    margin:2px;
+
+}
+.actionIcons button:hover{
+    /* background-color: white; */
+    /* color:#004289; */
+    background-color: lightyellow;
+    color:#004289;
+    border:2px solid #004289;
+}
+.updateVolume{
+    width:50%;
+    max-width:580px;
+    height:fit-content;
+    /* background-color: #004289; */
+    background-color:#004289;
+    color:white;
+    padding:30px;
+    box-sizing: border-box;
+    margin-bottom:100px;
+    /* border-radius:8px; */
+    position:absolute;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:50%;
+}
+.formDiv{
+    height:40px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.updateVolume input{
+    /* float:right; */
+    width:60%;
+    padding:6px;
+    /* margin-bottom:5px; */
+
+}
+.updateVolume select{
+    width:60%;
+    /* float:right; */
+    padding:6px;
+    box-sizing: content-box;
+}
+.updateVolume button{
+    padding:8px 8px;
+    width:100px;
+    font-size:16px;
+    cursor:pointer;
+    color:white;
+    /* background-color: #004289; */
+    background-color:#004289 ;
+    border : 2px solid white;
+    outline:none;
+    border-radius:4px;
+    margin-left:80px;
+    margin-right:80px;
+    transition: .5s;
+    margin-top:20px;
+    }
+.updateVolume button:hover{
+    border-color:#004289;
+    color:#004289;
+    background-color:whitesmoke;
+}
+.popupWrapper{
+    width:100%;
+    height:100% !important;
+    background-color:rgb(238, 234, 234, .5);
+    position:absolute;
+    top:0;
+    left:0;
+
+}
+
+.AddClient_popup textarea{
+    height:50px;
+    width:73%;
+    margin-left:10px;
+}
+.textarea_wrapper{
+    display:flex;
+    align-items: top;
+    justify-content: center;
+}
+.AddClent_popUp_Wrapper{
+    width:100%;
+    height:fit-content;
+    background-color:rgb(238, 234, 234, .5);
+    position:absolute;
+    top:0;
+    left:0;
+    padding-top:100px;
+    box-sizing:border-box;
+}
+.AddClient_popup{
+background-color:#004289;
+width:42%;
+min-width:400px;
+height:fit-content;
+padding-bottom:30px;
+color:white;
+text-align: center;
+margin-left:auto;
+margin-right:auto;
+}
+.AddClient_popup input{
+    width:70%;
+    padding:8px;
+    margin-left:22px;
+}
+/* .popup_heading{
+    width:100%;
+    height:50px;
+    background-color: lightyellow;
+    color:black;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+} */
+.AddClient_popup form{
+    margin-top:40px;
+}
+.AddClient_popup form div{
+    margin-bottom:20px;
+}
+.AddClient_popup button{
+    padding:8px 8px;
+    width:100px;
+    font-size:16px;
+    cursor:pointer;
+    color: #004289;
+    /* background-color: #004289; */
+    background-color:lightsteelblue ;
+    border : 2px solid orange;
+    outline:none;
+    border-radius:4px;
+    margin-left:15px;
+    margin-right:15px;
+    transition: .5s;
+}
+.AddClient_popup button:hover{
+    border-color:#004289;
+    color:#004289;
+    background-color:whitesmoke;
+}
+@media(max-width:600px){
+.updateVolume{
+    width:90%;
+    padding:15px;
+    padding-bottom:30px;
+    max-width:350px;
+}
+.updateVolume input{
+    width:40%;
+    padding:2px;
+}
+.updateVolume span{
+    font-size:14px;
+}
+.updateVolume select{
+    width:40%;
+    padding:2px;
+}
+.updateVolume button{
+    padding:4px 4px;
+    width:80px;
+    font-size:14px;
+    margin:auto;
+    transition: .5s;
+    margin-top:20px;
+}
+.AddClient_popup{
+    background-color:#004289;
+    width:75%;
+    height:400px;
+    color:white;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    }
+.AddClient_popup input{
+    width:50%;
+    padding:4px;
+    margin-left:22px;
+}
+.AddClient_popup textarea{
+    height:50px;
+    width:50%;
+    margin-left:10px;
+}
+.AddClient_popup button{
+    padding:4px 4px;
+    width:80px;
+    font-size:14px;
+}
+.popup_heading{
+    font-size:14px;
+
+}
+}
+@media(min-width:600px) and (max-width:768px){
+
+    .updateVolume{
+        width:55%;
+        padding:15px;
+        padding-bottom:30px;
+        max-width:400px;
+    }
+    .updateVolume input{
+        width:45%;
+        padding:2px;
+    }
+    .updateVolume span{
+        font-size:14px;
+    }
+    .updateVolume select{
+        width:45%;
+        padding:2px;
+    }
+    .updateVolume button{
+        padding:4px 4px;
+        width:80px;
+        font-size:14px;
+        margin:auto;
+        transition: .5s;
+        margin-top:20px;
+    }
+
+    .AddClient_popup{
+        background-color:#004289;
+        width:60%;
+        height:400px;
+        color:white;
+        text-align: center;
+        margin-left:auto;
+        margin-right:auto;
+        }
+    .AddClient_popup input{
+        width:60%;
+        padding:4px;
+        margin-left:22px;
+    }
+    .AddClient_popup textarea{
+        height:50px;
+        width:60%;
+        margin-left:10px;
+    }
+    .AddClient_popup button{
+        padding:4px 4px;
+        width:80px;
+        font-size:14px;
+    }
+}
+@media(min-width:768px) and (max-width:992px){
+    .updateVolume{
+        width:50%;
+        padding:15px;
+        padding-bottom:30px;
+        max-width:400px;
+
+    }
+    .updateVolume input{
+        width:50%;
+        padding:2px;
+    }
+    .updateVolume span{
+        font-size:14px;
+    }
+    .updateVolume select{
+        width:50%;
+        padding:2px;
+    }
+    .updateVolume button{
+        padding:4px 4px;
+        width:80px;
+        font-size:14px;
+        margin:auto;
+        transition: .5s;
+        margin-top:20px;
+    }
+    .AddClient_popup{
+        background-color:#004289;
+        width:55%;
+        height:400px;
+        color:white;
+        text-align: center;
+        margin-left:auto;
+        margin-right:auto;
+        }
+
+}
+@media(min-width:992px) and (max-width:1200px){
+    .updateVolume{
+        width:55%;
+        padding:15px;
+        padding-bottom:30px;
+        /* max-width:400px; */
+    }
+
+    .AddClient_popup{
+        background-color:#004289;
+        width:55%;
+        height:400px;
+        color:white;
+        text-align: center;
+        margin-left:auto;
+        margin-right:auto;
+        }
+}
+/* //------------------------------------------popup-------------------------- */
+/* .AddClient_popup textarea{
+    height:50px;
+    width:68%;
+    margin-left:50px;
+} */
+.textarea_wrapper_pop{
+    /* display:flex; */
+    align-items: top;
+    /* justify-content: center; */
+}
+.AddExchange textarea{
+    width:68%;
+    padding:8px;
+    height:50px;
+    float: right;
+    box-sizing: content-box;
+
+    /* margin-left:11%; */
+}
+.AddExchange{
+background-color:lightsteelblue;
+width:60%;
+max-width:750px;
+height:fit-content;
+color:black;
+/* text-align: center; */
+margin-left:auto;
+margin-right:auto;
+margin-top:80px;
+padding-bottom:20px;
+border-radius: 8px;
+}
+.AddExchange input{
+    width:68%;
+    /* width:400px; */
+    padding:8px;
+    float: right;
+    /* margin-right:50px; */
+}
+.AddExchange select{
+    width:68%;
+    box-sizing: content-box;
+    padding:8px;
+    float: right;
+    /* margin-right:50px; */
+}
+.popup_heading{
+    width:100%;
+    height:50px;
+    background-color: lightyellow;
+    color:black;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.AddExchange form{
+    margin-top:40px;
+    padding:0px 10%;
+    box-sizing: border-box;
+}
+.AddExchange form div{
+    margin-bottom:20px;
+}
+.AddExchange button{
+    padding:8px 8px;
+    width:100px;
+    font-size:16px;
+    cursor:pointer;
+    color: #004289;
+    /* background-color: #004289; */
+    background-color:lightsteelblue ;
+    border : 2px solid #004289;
+    outline:none;
+    border-radius:4px;
+    /* margin-left:100px;
+    margin-right:50px; */
+    transition: .5s;
+}
+.AddExchange button:hover{
+    border-color:#004289;
+    color:#004289;
+    background-color:lightyellow;
+}
+.btnWrapper{
+    margin-top:100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+@media(max-width:600px){
+    .AddExchange{
+        font-size:12px;
+        width:90%;
+        /* max-width:300px; */
+    }
+    .AddExchange input{
+        padding:6px;
+        width:55%;
+    }
+    .AddExchange select{
+        padding:6px;
+        width:55%;
+
+    }
+    .AddExchange form{
+        padding:0 4%;
+    }
+    .AddExchange textarea{
+        float: right;
+        width:54%;
+
+    }
+}
+@media(min-width:600px) and (max-width:768px){
+    .AddExchange{
+        font-size:12px;
+        width:75%;
+        max-width:400px;
+    }
+    .AddExchange input{
+        padding:6px;
+        width:65%;
+    }
+    .AddExchange select{
+        padding:6px;
+        width:65%;
+
+    }
+    .AddExchange form{
+        padding:0 5%;
+    }
+    .AddExchange textarea{
+        /* margin-left:1%; */
+        width:64%;
+        /* max-width:100px; */
+    }
+   
+}
+@media(min-width:768px) and (max-width:992px){
+    .AddExchange{
+        font-size:14px;
+        width:75%;
+        max-width:500px;
+    }
+    .AddExchange input{
+        padding:6px;
+        width:65%;
+    }
+    .AddExchange select{
+        padding:6px;
+        width:65%;
+
+    }
+    .AddExchange form{
+        padding:0 5%;
+    }
+    .AddExchange textarea{
+        margin-left:14.5%;
+        width:64%;
+    }
+
+}
+@media(min-width:992px) and (max-width:1200px){
+    .AddExchange{
+        font-size:16px;
+        width:75%;
+        max-width:600px;
+    }
+    .AddExchange input{
+        padding:6px;
+        width:65%;
+    }
+    .AddExchange select{
+        padding:6px;
+        width:65%;
+
+    }
+    .AddExchange form{
+        padding:0 5%;
+    }
+    .AddExchange textarea{
+        margin-left:16%;
+        width:64%;
+    }
+    .AddExchange button{
+        padding:8px 8px;
+        width:100px;
+        font-size:14px;
+        margin-left:90px;
+        margin-right:0px;
+        transition: .5s;
+    }
+}
+
+
+

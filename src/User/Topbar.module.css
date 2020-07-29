@@ -1,0 +1,260 @@
+.dropdown{
+    color:white;
+    list-style-type: none;
+    width:fit-content;
+    height:fit-content;
+    padding: 0px 20px 0px 20px;
+    background-color: #004289;
+    margin:0px;
+    position:absolute;
+    top:60px;
+    display: none;
+}
+.menuItem:hover .dropdown{
+display:block;
+}
+.bitcoinLogo{
+    width:10%;
+    transition: all 2s linear;
+}
+.bitcoinLogo:hover{
+  transform: rotateY(360deg)
+}
+
+.link {
+    /* //---important for underline property--// */
+    width:fit-content;  
+	cursor: pointer;
+    position:relative;
+}
+.underline {
+	width: 100%;
+	height:3px ;
+	background-color:#004289;
+	position: absolute;
+	overflow:hidden;
+	/* top:265%; */
+	left:0%;
+}
+.underline::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color:white;
+	position: absolute;
+	top:0;
+	left:0;
+	transform: translatex(-101%);
+	transition: transform 0.3s;
+}
+.link:hover .underline::before {
+	transform: translatex(0%);
+}
+.underlineExe {
+	width: 100%;
+	height:3px ;
+	background-color:#004289;
+	position: absolute;
+	overflow:hidden;
+	/* top:265%; */
+	left:0%;
+}
+.underlineExe::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color:white;
+	position: absolute;
+	top:0;
+	left:0;
+	transform: translatex(-101%);
+	transition: transform 0.3s;
+}
+.link:hover .underlineExe::before {
+	transform: translatex(0%);
+}
+.botsalogo_topbar{
+    width:100%;
+    height:83px;
+    background-color:#004289;
+    /* background-color: teal; */
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid lightskyblue;
+    box-shadow: 0px 0px 8px rgb(222, 237, 241);
+    color:white;
+    /* justify-content: space-around; */
+}
+.botsalogo_topbar :link{
+    color: inherit; 
+    text-decoration: inherit;
+}
+.underlineLog {
+	width: 100%;
+	height:3px ;
+	background-color:#004289;
+	position: absolute;
+	overflow:hidden;
+	/* top:265%; */
+	left:0%;
+}
+.underlineLog::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color:white;
+	position: absolute;
+	top:0;
+	left:0;
+	transform: translatex(-101%);
+	transition: transform 0.3s;
+}
+.link:hover .underlineLog::before {
+	transform: translatex(0%);
+}
+.menuItemClicked{
+    color:#007bff !important;
+    /* color:white; */
+}
+.botsalgo_logoSection{
+    width:25%;
+    display: flex;
+    align-items: center;
+    color:white;
+    /* justify-content: center; */
+}
+.botsalgo_logoSection img{
+    width:30px;
+    height:30px;
+}
+.botsalgo_logoSection h3{
+    color:white;
+    margin-left:4%;
+}
+.topbarBtnWrapper{
+    margin-right:100px;
+    }
+.botsalogo_logo{
+    width:28%;
+    min-width:150px;
+
+}
+.topbarBtnSWrapper{
+margin-right:80px;
+}
+.topbarBtnSWrapper button{
+    padding:8px 12px;
+    margin-right:20px;
+    color:white;
+    background-color:#007bff;
+    border:1px solid #007bff;
+    cursor:pointer;
+    border-radius: 4px;
+    outline: none;
+}
+.topbarBtnSWrapper :active{
+    padding:8px 12px;
+    margin-right:20px;
+    background-color:#004289;
+    border:1px solid #004289;
+    color:white;
+    cursor:pointer;
+    border-radius: 4px;
+    outline: none;
+}
+.botalogo_menuItems{
+    width:75%;
+    display:flex;
+    justify-content: space-around;
+}
+.menuItemSub{
+    display:flex;
+    width:70%;
+    justify-content: space-evenly;
+}
+
+.botalogo_menuItems p{
+  color:white;
+  font-size:14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight :500;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+.botalogo_menuItems p:hover{
+    color: #007bff;
+    cursor:pointer;
+}
+.sidebarWrapper{
+    display:none;
+    width: 150px;
+    height:100vh;
+    background-color:#004289;
+    position:absolute;
+    top:0;
+    left:0;
+    color:white;
+    /* text-align: center; */
+    padding-top:80px;
+    box-sizing: border-box;
+    padding-left:30px;
+    box-sizing: border-box;
+    z-index: +2;
+}
+.sideBarIcons{
+    font-size: 24px;
+    color:#004289;
+    cursor:pointer;
+    display: none;
+    width:25px;
+    height: fit-content;
+}
+.sideBarIcons:hover{
+    color:orange;
+}
+.sidebarWrapper p:hover{
+    color:orange;
+    cursor: pointer;
+}
+.sidebarSubSection{
+    display: none;
+    width:100%;
+    height:100vh;
+    cursor: pointer;
+    background-color:rgba(216, 216, 236, 0.5);
+    position:absolute;
+    top:0;
+    left:0;
+    
+}
+@media(max-width:600px){
+    .botsalogo_logo{
+        width:65%;
+    }
+    .botsalogo_topbar{
+        display:none;
+    }
+    .sidebarWrapper{
+        display:block;
+    }
+    .sidebarSubSection{
+        display:block;
+    }
+    .sideBarIcons{
+        display:block;
+        margin-top:50px;
+        margin-left:50px;
+    }
+}
+@media(min-width:600px) and (max-width:768px){
+    .botsalogo_logo{
+        width:60%;
+    }
+}
+@media(min-width:768px) and (max-width:992px){
+    .botsalogo_logo{
+        width:45%;
+    } 
+}
